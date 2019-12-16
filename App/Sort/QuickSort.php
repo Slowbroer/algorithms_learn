@@ -17,7 +17,7 @@ class QuickSort extends BaseSort
 
     public function __construct($data)
     {
-        $this->data = array_rand($data);
+        $this->data = $data;
     }
 
     public function sort($start,$end){

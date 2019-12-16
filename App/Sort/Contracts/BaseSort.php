@@ -18,6 +18,9 @@ abstract class BaseSort
     }
 
     public function exchange($left,$right){
+        $left = intval($left);
+        $right = intval($right);
+
         $t = $this->data[$left];
         $this->data[$left] = $this->data[$right];
         $this->data[$right] = $t;

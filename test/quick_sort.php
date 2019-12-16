@@ -9,11 +9,13 @@
 require __DIR__.'/../vendor/autoload.php';
 
 $testData = [];
-while ($testData < 100){
-    $testData[] = rand(1,999999);
+while (count($testData) < 10000){
+    $testData[] = rand(1,1000000000);
 }
 
 $sort = new App\Sort\QuickSort($testData);
-$sort->sort(0,99);
-var_dump(json_encode($sort->getData()));
+var_dump(time());
+$sort->sort(0,9999);
+var_dump(time());
+
 
