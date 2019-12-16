@@ -15,5 +15,5 @@ while ($testData < 100){
 
 $sort = new App\Sort\QuickSort($testData);
 $sort->sort(0,99);
-var_dump($sort->getData());
+var_dump(json_encode($sort->getData()));
 

@@ -38,8 +38,15 @@ class QuickSort extends BaseSort
         $v = $this->data[$start]; //
 
         while(true){
-            while ($this->less($this->data[++$i],$v)) if ($i == $end) break;
-            while ($this->less($v,$this->data[--$j])) if ($j == $start) break;
+            while ($this->less($this->data[++$i],$v))
+            {
+                if ($i == $end) break;
+            }
+            while ($this->less($v,$this->data[--$j]))
+            {
+                if ($j == $start) break;
+            }
+
             if ($i >= $j) break;
             $this->exchange($i,$j);
         }

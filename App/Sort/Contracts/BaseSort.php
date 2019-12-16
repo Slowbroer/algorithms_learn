@@ -14,7 +14,7 @@ abstract class BaseSort
     protected $data = [];
 
     public function less($left,$right){
-        return $this->data[$left] < $this->data[$right];
+        return $left < $right;
     }
 
     public function exchange($left,$right){
