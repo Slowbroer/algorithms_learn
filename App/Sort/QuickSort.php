@@ -47,4 +47,8 @@ class QuickSort extends BaseSort
         return $j;
     }
 
+    public function getData(){
+        return $this->data;
+    }
+
 }
