@@ -1,0 +1,16 @@
+{
+  "require": {
+    "ext-json": "^1.5"
+  },
+  "autoload": {
+    "classmap": [
+
+    ],
+    "psr-4": {
+      "App\\": "App/"
+    },
+    "files": [
+      "App/Helpers/public_function.php"
+    ]
+  }
+}
