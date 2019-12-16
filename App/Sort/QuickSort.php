@@ -47,8 +47,4 @@ class QuickSort extends BaseSort
         return $j;
     }
 
-
-
-
-
 }
