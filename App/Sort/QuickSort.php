@@ -6,10 +6,10 @@
  * Time: 15:34
  */
 
-namespace Sort;
+namespace App\Sort;
 
 
-use Sort\Contracts\BaseSort;
+use App\Sort\Contracts\BaseSort;
 
 class QuickSort extends BaseSort
 {

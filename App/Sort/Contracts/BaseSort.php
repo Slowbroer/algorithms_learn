@@ -6,7 +6,7 @@
  * Time: 15:42
  */
 
-namespace Sort\Contracts;
+namespace App\Sort\Contracts;
 
 
 abstract class BaseSort
